@@ -1,5 +1,11 @@
 //https://nitro.unjs.io/config
 export default defineNitroConfig({
+    
+    // preset: 'bun',
+    experimental:{
+        openAPI: true
+    },
+    
     esbuild:{
         options:{
             jsx: 'transform',
@@ -31,5 +37,6 @@ export default defineNitroConfig({
                 }
             }
         }
-    }
+    },
+    
 });
