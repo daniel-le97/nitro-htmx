@@ -15,6 +15,9 @@ yarn install
 
 # pnpm
 pnpm install
+
+# bun 
+bun install
 ```
 
 ## Development Server

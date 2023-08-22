@@ -2,7 +2,7 @@
 
 
 import { TodoList } from "../../utils/components/Todos.tsx";
-import { elements } from "../../utils/elements.ts";
+import * as elements from 'typed-html'
 
 
 export default defineEventHandler(async(event) => {

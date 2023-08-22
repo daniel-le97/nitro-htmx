@@ -11,4 +11,3 @@ export const todos = sqliteTable("todos", {
 
 export type Todo = InferModel<typeof todos>;
 export const insertTodos = createInsertSchema(todos)
-export const insertTodo = insertTodos.pick({content: true})

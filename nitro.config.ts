@@ -1,11 +1,13 @@
 //https://nitro.unjs.io/config
 export default defineNitroConfig({
-    
-    // preset: 'bun',
     experimental:{
         openAPI: true
     },
-    
+    imports: {
+        imports: [{name: '*', as: 'elements', from: 'typed-html' }],
+
+        dirs: ['./components/*']
+    },
     esbuild:{
         options:{
             jsx: 'transform',
